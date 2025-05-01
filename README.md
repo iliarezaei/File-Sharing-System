@@ -1,62 +1,69 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# سیستم اشتراک‌گذاری فایل
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="public/img/profile.jpg" width="300" alt="ایلیا رضایی">
 </p>
 
-## About Laravel
+<p align="center">
+  <strong>توسعه‌دهنده: ایلیا رضایی</strong>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## درباره این پروژه
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+این پروژه یک سیستم مدیریت و اشتراک‌گذاری فایل است که با استفاده از فریم‌ورک Laravel پیاده‌سازی شده است. ویژگی‌های اصلی این سیستم عبارتند از:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- ثبت‌نام و ورود کاربران
+- هر کاربر 5 گیگابایت فضای ذخیره‌سازی دارد
+- امکان آپلود، مشاهده و حذف فایل‌ها
+- امکان اشتراک‌گذاری فایل‌ها با کاربران دیگر از طریق ایمیل
+- مدیریت دسترسی‌های اشتراک‌گذاری شده
+- واسط کاربری زیبا و واکنش‌گرا
+- API مستندسازی شده با Swagger
 
-## Learning Laravel
+## نحوه استفاده
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. ثبت‌نام کنید یا وارد شوید
+2. از داشبورد، فایل‌های خود را آپلود، مدیریت و حذف کنید
+3. برای اشتراک‌گذاری یک فایل، روی دکمه اشتراک‌گذاری کلیک کرده و ایمیل کاربر مورد نظر را وارد کنید
+4. فایل‌های به اشتراک گذاشته شده با شما در بخش "فایل‌های به اشتراک گذاشته شده" قابل مشاهده هستند
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## API
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+این پروژه دارای API‌های RESTful است که با Swagger مستند شده‌اند و قابلیت‌های زیر را ارائه می‌دهند:
 
-## Laravel Sponsors
+- ثبت‌نام و ورود کاربران
+- دریافت اطلاعات کاربر فعلی
+- مدیریت فایل‌ها (آپلود، حذف، مشاهده)
+- مدیریت اشتراک‌گذاری‌ها
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+برای دسترسی به مستندات API، به آدرس زیر مراجعه کنید:
+```
+http://your-domain.com/api/documentation
+```
 
-### Premium Partners
+## فناوری‌های استفاده شده
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development/)**
-- **[Active Logic](https://activelogic.com)**
+- Laravel
+- MySQL
+- Bootstrap
+- Swagger
+- Sanctum (برای احراز هویت API)
 
-## Contributing
+## نصب و راه‌اندازی
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. پروژه را کلون کنید
+2. دستور `composer install` را اجرا کنید
+3. فایل `.env.example` را به `.env` کپی کرده و تنظیمات پایگاه داده را انجام دهید
+4. دستور `php artisan key:generate` را اجرا کنید
+5. دستور `php artisan migrate` را اجرا کنید
+6. دستور `php artisan serve` را اجرا کنید
 
-## Code of Conduct
+## مجوز
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+این پروژه تحت مجوز MIT منتشر شده است.
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# File-Sharing-System
+<p align="center">
+  <strong>توسعه‌داده شده توسط ایلیا رضایی</strong>
+</p>
